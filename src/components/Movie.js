@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
 const MovieList = ({ searchTerm }) => {
   const [movies, setMovies] = useState([]);
@@ -10,7 +10,7 @@ const MovieList = ({ searchTerm }) => {
         const response = await axios.get('http://www.omdbapi.com/', {
           params: {
             s: 'marvel',
-            apikey: '83edcaab',
+            apikey: 'ce762116',
           },
         });
         console.log('API Response:', response.data);

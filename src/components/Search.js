@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import axios from 'axios';
+import React, { useState } from 'react';
 import '../App.css';
 
 const Search = ({ onSearch }) => {
@@ -16,7 +16,7 @@ const Search = ({ onSearch }) => {
       const response = await axios.get('http://www.omdbapi.com/', {
         params: {
           s: searchTerm,
-          apikey: '83edcaab',
+          apikey: 'ce762116',
         },
       });
       setSearchResults(response.data.Search || []);
